@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        .fl {
+            float: left;
+        }
+
+        .fr {
+            float: right;
+        }
+
+        .new {
+            float: left;
+            margin-left: 2%;
+        }
+
+        .ads {
+            width: 100%;
+            height: 5vh;
+            font-size: 20px;
+            color: white;
+            background-color: blue;
+            text-align: center;
+            line-height: 40px;
+        }
+
+        .header {
+            width: 100%;
+            height: 10vh;
+            position: sticky;
+            top: 0;
+            background-color: lightgrey;
+            z-index: 1;
+        }
+
+        #logo {
+            width: 150px;
+            height: 50px;
+            translate: 20px 10px;
+        }
+
+        #searchbar {
+            translate: 50px 2px;
+            width: 600px;
+            height: 50px;
+            border-radius: 20px;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+
+        .nav-links {
+            width: 45%;
+            height: 50px;
+            float: right;
+            translate: -25px 20px;
+        }
+
+        .nav {
+            margin-left: 40px;
+            color: black;
+            font-size: 1.2rem;
+            text-decoration: none;
+        }
+
+        .banner {
+            width: 100%;
+            height: 85vh;
+            background-image: url(img/it-sector.jpg);
+            background-size: cover;
+            margin-bottom: 0.5%;
+        }
+
+        .fade {
+            background-color: rgba(0, 0, 0, 0.50);
+            width: 100%;
+            height: 85vh;
+        }
+
+        .banner .fade .msg {
+            height: 200px;
+            width: 450px;
+            translate: 150px 150px;
+            background-color: rgba(255, 255, 255, 0.50);
+            box-shadow: 4px 4px 2px black;
+            text-align: center;
+        }
+
+        .mid-sec {
+            width: 100%;
+            height: 90vh;
+            margin-bottom: 1%;
+        }
+
+        .mid-heading {
+            font-size: 3rem;
+            font-family: 'Times New Roman', Times, serif;
+            translate: 20px 10px;
+        }
+        .box1{
+            width: 80%;
+            height: 20vh;
+            translate: 30px 35px;
+        }
+
+        .box2{
+            width: 95%;
+            height: 55vh;
+            translate: 30px 35px;
+        }
+        .para {
+            font-size: 20px;
+            translate: 20px 20px;
+            font-weight: 500;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .buttons-sec {
+            width: 80%;
+            height: 50px;
+            margin-left: 20px;
+            translate: 0px 40px;
+        }
+
+        .btn {
+            font-weight: bold;
+            width: 100px;
+            height: 35px;
+            border: transparent;
+            color: black;
+            background-color: grey;
+            transition: background-color, color;
+            margin-right: 50px;
+        }
+        .btn:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .heading-content {
+            width: 80%;
+            height: 160px;
+            translate: 10px 1px;
+        }
+        .offer-box {
+            width: 100%;
+            height: 300px;
+            translate: 10px 0px;
+        }
+        .box {
+            display: inline;
+            border: 1px dashed black;
+            width: 22.25%;
+            height: 250px;
+            margin: 25px 1%;
+            overflow: hidden;
+        }
+        marquee{
+            background-color: yellow;
+            height: 40px;
+            font-size: 32px;
+            font-style: italic;
+            font-weight: bold;
+            translate: 0px 70px;
+        }
+
+        .categories {
+            width: 100%;
+            height: 90vh;
+            margin: 2vh auto;
+        }
+
+        .pics {
+            width: 23%;
+            height: 41.50vh;
+            margin-bottom: 1%;
+            box-shadow: 0px 0px 0px transparent;
+            transition: box-shadow;
+        }
+
+        .pics:hover {
+            box-shadow: -2px -2px 2px black, 2px 2px 2px black;
+        }
+
+        .partners {
+            width: 100%;
+            height: 60vh;
+            position: relative;
+            background-color: whitesmoke;
+        }
+
+        .review {
+            border: 1px solid black;
+            width: 50%;
+            height: 150px;
+            position: absolute;
+            top: 80px;
+            left: 360px;
+            background: rgb(2, 0, 36);
+            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(191, 189, 29, 0.5663515406162465) 0%, rgba(0, 212, 255, 1) 100%);
+        }
+
+        .c-logos{
+            width: 200px;
+            height: 150px;
+        }
+        .c1{
+            translate: 10px 250px;
+        }
+
+        .c2{
+            translate: 50px 250px;
+        }
+
+        .c3{    
+            translate: 60px 250px;
+        }
+
+        .c4{
+            translate: 70px 250px;
+        }
+
+        .c5{
+         translate: 90px 250px;
+        }
+
+        
+        .c6{
+            translate: 150px 250px;
+        }
+
+        .footer {
+            width: 100%;
+            height: 20vh;
+            background-color: rgb(72, 67, 67);
+            position: relative;
+            text-align: center; font-size: 2rem;
+            color: white;
+        }
+        .footer img{position: absolute; top: 10px; left: 45%; }
+    </style>
+</head>
+
+<body>
+    <div class="ads"><b>Practice makes a man perfect |</b> Register yourself fast and grab flat 40% discount !!</div>
+
+    <div class="header">
+        <img id="logo" src="img/Udemy_logo.svg.png" alt="">
+        <input id="searchbar" type="search" placeholder="Search for anything">
+        <div class="nav-links">
+            <a class=" nav " href="#">Categories </a>
+            <a class=" nav " href="#">Business </a>
+            <a class=" nav " href="#">Register </a>
+            <a class=" nav " href="#">Login here </a>
+            <a class="nav" href="#">About</a>
+            <a class=" nav " href="#"><img src="img/world.png" alt="" width="30px" height="30px"> </a>
+        </div>
+    </div>
+
+        <div class="banner">
+            <div class="fade">
+                <div class="msg">
+                    <h2>Don't Watch, Let's break all boundaries.</h2>
+                    <p align="justify" style="padding: 20px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptatibus
+                        tempora
+                        soluta illum hic incidunt recusandae impedit, velit ducimus blanditiis, sunt veniam ullam
+                        deleniti
+                        cupiditate qui inventore aliquid quasi distinctio delectus nemo enim? Iure illum sapiente,
+                        incidunt
+                        ipsum veniam tenetur! A explicabo officia nisi excepturi fugiat dignissimos vero cupiditate
+                        ratione.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mid-sec">
+           <div class="box1">
+                <h1 class="mid-heading"> A broad selection of courses</h1>
+                <p class="para">Choose from 213,000 online video courses with new additions published every month.</p>
+                <div class="buttons-sec">
+                    <input class="btn b1" type="button" value="Python">
+                    <input class="btn b2" type="button" value="Java">
+                    <input class="btn b3" type="button" value="ML">
+                    <input class="btn b4" type="button" value="AI">
+                    <input class="btn b5" type="button" value="Bootstrap">
+                    <input class="btn b6" type="button" value="PHP">
+                </div>
+           </div>
+
+           <div class="box2">
+                <div class="heading-content">
+                        <h1>Expand your career opportunities with Python.</h1>
+                        <p style="font-size: 18px; margin-top: 10px;">Take one of Udemy’s range of Python courses and learn how
+                         to code using this incredibly useful language. Its simple syntax and readability makes Python
+                        perfect for Flask, Django, data science, and machine learning. You’ll learn how to build everything
+                        from games to sites to apps. Choose from a range of courses that will appeal to...</p>
+                        <input type="button" value="Explore More"
+                        style="width: 100px; height: 40px; margin-top: 8px; background-color: black; color: white;">
+                </div>
+                <div class="offer-box">
+                    <div class="box fl"><img src="img/python.jpg" alt="" width="400px" height="140px">
+                        <h3>The Complete Python Bootcamp from Zero To Hero</h3><br>
+                        <h4>Take this at Rs.699/- <del>3999/-</del></h4>
+                    </div>
+                    <div class="box new"><img src="img/short-time python.jpg" alt="" width="400px" height="140px">
+                        <h3>Complete This Amazing Python Course in 21 days only.</h3><br>
+                        <h4>Take this at Rs.699/- <del>3999/-</del></h4>
+                    </div>
+                    <div class="box new"><img src="img/ml.jpg" alt="" width="400px" height="140px">
+                        <h3>Machine Learning A-Z &trade;<br> Be the part of FUTURE.</h3><br>
+                        <h4>Take this at Rs.699/- <del>3999/-</del></h4>
+                    </div>
+                    <div class="box fr"><img src="img/ai.jpg" alt="" width=4000px" height="140px">
+                        <h3>Make this world again with Artificial Intelligence.</h3><br>
+                        <h4>Take this at Rs.699/- <del>3999/-</del></h4>
+                    </div>
+                </div>
+           </div>
+           <marquee behavior="" direction="" >HURRY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; UP !!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GET &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; THESE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  GREAT &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  COURSES  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AT &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  AMAZING  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DISCOUNT  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; OFFERS :)</marquee>  
+        </div>
+
+        <div class="categories">
+            <h1>TOP CATEGORIES :</h1>
+            <div class="pics fl"><img class="cat-pic" src="img/design-photo.jpg" alt="" width="330px" height="300px">
+                <h3>Designing</h3>
+            </div>
+            <div class="pics new"><img class="cat-pic" src="img/development-photo.jpg" alt="" width="330px" height="300px">
+                <h3>Development</h3>
+            </div>
+            <div class="pics new"><img class="cat-pic" src="img/lohp-category-business-v2.jpg" alt="" width="330px"
+                    height="300px">
+                <h3>Business</h3>
+            </div>
+            <div class="pics fr"><img class="cat-pic" src="img/lohp-category-it-and-software-v2.jpg" alt="" width="330px"
+                    height="300px">
+                <h3>IT & Software</h3>
+            </div>
+            <div class="pics fl"><img class="cat-pic" src="img/lohp-category-marketing-v2.jpg" alt="" width="330px"
+                    height="300px">
+                <h3>Digital Marketing</h3>
+            </div>
+            <div class="pics new"><img class="cat-pic" src="img/lohp-category-music-v2.jpg" alt="" width="330px"
+                    height="300px">
+                <h3>Music</h3>
+            </div>
+            <div class="pics new"><img class="cat-pic" src="img/lohp-category-personal-development-v2.jpg" alt=""
+                    width="330px" height="300px">
+                <h3>Personal Development</h3>
+            </div>
+            <div class="pics fr"><img class="cat-pic" src="img/lohp-category-photography-v2.jpg" alt="" width="330px"
+                    height="300px">
+                <h3>Photography</h3>
+            </div>
+        </div>
+
+
+        <div class="partners">
+            <div class="review">
+                <h2 style="font-family: 'Times New Roman'; text-align: center; margin-top: 20px;">Trusted by over 13,400
+                    great teams</h2>
+                <p style="text-align: center; margin-top: 40px; font-size: 20px;">Leading companies use the same courses to
+                    help employees keep their skills fresh.</p>
+            </div>
+            <div class="companies-logo"><img src="" alt="">
+                <img class="c-logos c1" src="img/amazon-removebg-preview.png" alt="">
+                <img class="c-logos c2" src="img/google-logo-removebg-preview.png" alt="">
+                <img class="c-logos c3" src="img/Volkswagen-logo-2000-1920x1080.png" alt="">
+                <img class="c-logos c4" src="img/netapp-removebg-preview.png" alt="">
+                <img class="c-logos c5" src="img/Nasdaq-logo-removebg-preview.png" alt="">
+                <img class="c-logos c6" src="img/Tata_Consultancy_Services_Logo.svg.png" alt="">
+            </div>
+        </div>
+
+
+        <div class="footer"><img src="img/Udemy_logo.svg.png" alt="" width="150px" height="50px"><br><br>Copyright&copy;2023</div>
+</body>
+
+</html>
